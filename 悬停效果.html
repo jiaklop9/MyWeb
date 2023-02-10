@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼠标悬停特效</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* 让子元素垂直排列 */
+            flex-direction: column;
+            width: 100vh;
+            height: 100vh;
+            /* 背景径向渐变 */
+            background: radial-gradient(circle at center, #555, #000);
+        }
+
+        .container a {
+            position: relative;
+            /* 将a元素设置为块级元素，不然无法设置宽高 */
+            display: block;
+            width: 140px;
+            height: 60px;
+            text-align: center;
+            margin: 40px;
+            color: plum;
+            text-decoration: none;
+            font-size: 20px;
+            transition: all 0.3s ease-in-out;
+            /* 我们来改变各个a元素的颜色【划重点】 */
+            /* 大家看到效果了吧，是不是很神奇 */
+            /* 
+        hue-rotate是颜色滤镜，可以加不同的度数来改变颜色，这里我们用了calc自动计算函数，
+        以及var函数来调用我们给每一个a元素设置的不同的自定义属性1~5，然后分别乘以60度，
+        就能够分别得到不同的颜色 
+    */
+            filter: hue-rotate(calc(var(--i)*60deg));
+        }
+
+        .container a::before,
+        .container a::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 2px solid plum;
+            transition: all 0.3 ease-in-out 0.3s;
+        }
+
+        .container a::before {
+            top: 0;
+            left: 0;
+            border-right: 0;
+            border-bottom: 0;
+        }
+
+        .container a::after {
+            right: 0;
+            bottom: 0;
+            border-top: 0;
+            border-left: 0;
+        }
+
+        .container a:hover {
+            background-color: plum;
+            color: #000;
+            box-shadow: 0 0 50px plum;
+            /* below是下倒影 1px是倒影和元素相隔的距离 最后是个渐变颜色 */
+            -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+            transition-delay: 0.4s;
+        }
+
+        .container a:hover::before,
+        .container a:hover::after {
+            width: 138px;
+            height: 58px;
+            /* 这里不需要延迟 */
+            transition-delay: 0s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 这里的--i是一个自定义属性 -->
+        <a href="#" style="--i:1">点赞</a>
+        <a href="#" style="--i:2">关注</a>
+        <a href="#" style="--i:3">评论</a>
+        <a href="#" style="--i:4">收藏</a>
+        <a href="#" style="--i:5">分享</a>
+    </div>
+</body>
+
+</html>

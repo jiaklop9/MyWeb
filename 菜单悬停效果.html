@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜单悬停效果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* vh，是指CSS中相对长度单位，表示相对视口高度（Viewport Height），1vh = 1% * 视口高度。 */
+            height: 60vh;
+            background: linear-gradient(200deg, #dad4ec, #f3e7e9);
+        }
+
+        ul {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            list-style-type: none;
+            transition: 0.3s;
+        }
+
+        ul li a {
+            position: relative;
+            display: block;
+            text-align: center;
+            margin: 0 30px;
+            color: #333;
+            font-size: 40px;
+            text-decoration: none;
+        }
+
+        ul:hover li {
+            /* 不透明度。从 0.0 （完全透明）到 1.0（完全不透明）。 */
+            opacity: 0.2;
+            /* 模糊度 */
+            filter: blur(2px);
+        }
+
+        ul li:hover {
+            opacity: 1;
+            filter: blur(0px);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="">首页</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">服务</a></li>
+        <li><a href="">案例</a></li>
+        <li><a href="">用户反馈</a></li>
+    </ul>
+</body>
+
+</html>

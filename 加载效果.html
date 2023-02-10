@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画加载效果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            height: 100vh;
+            /* 渐变背景 */
+            background: linear-gradient(to bottom, #2b5876, #09203f);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loading {
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border-top: 10px solid #63a69f;
+            /* 移动相对定位元素，但它原本所占的空间不会改变 */
+            position: relative;
+            animation: a1 2s linear infinite;
+        }
+
+        .loading::before, .loading::after {
+            content: "";
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            top: -10px;
+            box-sizing: border-box;
+            border-radius: 50%;
+        }
+
+        .loading::before {
+            border-top: 10px solid #f2e1ac;
+            transform: rotate(120deg);
+        }
+
+        .loading::after{
+            border-top: 10px solid #f2836b;
+            /* 旋转240度 */
+            transform: rotate(240deg);
+        }
+
+        .loading span {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            color: #fff;
+            animation: a2 2s linear infinite
+        }
+
+        @keyframes a1 {
+            0% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes a2 {
+            0% {
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading">
+        <span>拼命加载中</span>
+    </div>
+</body>
+
+</html>
