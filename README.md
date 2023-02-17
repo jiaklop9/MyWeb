@@ -13,3 +13,4 @@
 - [3D旋转卡片](https://github.com/jiaklop9/practise/blob/master/3D%E6%97%8B%E8%BD%AC%E5%8D%A1%E7%89%87.html)
 - [好看的水球加载效果](https://github.com/jiaklop9/practise/blob/master/%E6%B0%B4%E7%90%83%E5%8A%A0%E8%BD%BD%E6%95%88%E6%9E%9C.html)
 - [侧边展开导航栏](https://github.com/jiaklop9/practise/blob/master/侧边展开导航栏.html)
+- [3D旋转木马相册](https://github.com/jiaklop9/practise/blob/master/3D旋转木马相册.html)
