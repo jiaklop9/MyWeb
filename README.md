@@ -18,3 +18,7 @@
 - [高级的转动变色加载特效](https://github.com/jiaklop9/practise/blob/master/高级转动加载特效.html)
 - [毛玻璃炫光按钮](https://github.com/jiaklop9/practise/blob/master/毛玻璃炫光按钮.html)
 - [手机充电特效](https://github.com/jiaklop9/practise/blob/master/手机充电特效.html)
+- [字体发光效果](https://github.com/jiaklop9/practise/blob/master/字体发光效果.html)
+- [伸缩式动态搜索框](https://github.com/jiaklop9/practise/blob/master/伸缩式动态搜索框.html)
+- [HTML+CSS实现日月交替效果](https://github.com/jiaklop9/practise/blob/master/HTML+CSS实现日月交替效果.html)
+
