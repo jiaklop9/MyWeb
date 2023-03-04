@@ -24,5 +24,6 @@
 - [输入框动画](https://github.com/jiaklop9/practise/blob/master/输入框动画.html)
 - [抽屉式相册](https://github.com/jiaklop9/practise/blob/master/抽屉式相册.html)
 - [发光字体悬停效果](https://github.com/jiaklop9/practise/blob/master/发光字体悬停效果.html)
+- [波浪文字效果](https://github.com/jiaklop9/practise/blob/master/波浪文字效果.html)
 
 
