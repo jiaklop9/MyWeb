@@ -29,5 +29,6 @@
 - [幽灵文字效果](https://github.com/jiaklop9/practise/blob/master/幽灵文字效果.html)
 - [环形加载特效](https://github.com/jiaklop9/practise/blob/master/环形加载特效.html)
 - [心形加载动画](https://github.com/jiaklop9/practise/blob/master/心形加载动画.html)
+- [弹性标签动画](https://github.com/jiaklop9/practise/blob/master/弹性标签动画.html)
 
 
