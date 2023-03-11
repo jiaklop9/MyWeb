@@ -26,3 +26,7 @@
 - [发光字体悬停效果](https://github.com/jiaklop9/practise/blob/master/发光字体悬停效果.html)
 - [波浪文字效果](https://github.com/jiaklop9/practise/blob/master/波浪文字效果.html)
 - [隐藏式侧边导航栏](https://github.com/jiaklop9/practise/blob/master/隐藏式侧边导航栏.html)
+- [幽灵文字效果](https://github.com/jiaklop9/practise/blob/master/幽灵文字效果.html)
+- [环形加载特效](https://github.com/jiaklop9/practise/blob/master/环形加载特效.html)
+- [心形加载动画](https://github.com/jiaklop9/practise/blob/master/心形加载动画.html)
+- [弹性标签动画](https://github.com/jiaklop9/practise/blob/master/弹性标签动画.html)
