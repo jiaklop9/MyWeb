@@ -31,3 +31,4 @@
 - [心形加载动画](https://github.com/jiaklop9/practise/blob/master/心形加载动画.html)
 - [弹性标签动画](https://github.com/jiaklop9/practise/blob/master/弹性标签动画.html)
 - [垂直卡片滑动动画](https://github.com/jiaklop9/practise/blob/master/垂直卡片滑动动画.html)
+- [流星划过天际效果](https://github.com/jiaklop9/practise/blob/master/流星划过天际效果.html)
