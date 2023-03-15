@@ -30,3 +30,5 @@
 - [环形加载特效](https://github.com/jiaklop9/practise/blob/master/环形加载特效.html)
 - [心形加载动画](https://github.com/jiaklop9/practise/blob/master/心形加载动画.html)
 - [弹性标签动画](https://github.com/jiaklop9/practise/blob/master/弹性标签动画.html)
+- [不偷看密码的超萌猫头鹰](https://github.com/jiaklop9/practise/blob/master/不偷看密码的超萌猫头鹰.html)
+- [css生成三角形](https://github.com/jiaklop9/practise/blob/master/css生成三角形.html)
