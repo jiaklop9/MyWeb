@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>flex理解</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: grey;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .box1 {
+            flex: 2;
+            height: 10%;
+            background-color: blue;
+        }
+
+        .box2 {
+            flex: 1;
+            height: 10%;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box1"></div>
+    <div class="box2"></div>
+</div>
+</body>
+</html>
