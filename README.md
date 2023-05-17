@@ -36,3 +36,4 @@
 - [不偷看密码的超萌猫头鹰](https://github.com/jiaklop9/practise/blob/master/不偷看密码的超萌猫头鹰.html)
 - [css生成三角形](https://github.com/jiaklop9/practise/blob/master/css生成三角形.html)
 - [flex比例布局](https://github.com/jiaklop9/practise/blob/master/flex比例布局.html)
+- [射线渐变](https://github.com/jiaklop9/practise/blob/master/射线渐变.html)
