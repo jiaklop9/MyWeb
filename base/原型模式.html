@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 如果这个对象需要多个方法， 那么就要在全局作用域中定义多个函数。
+        这会导致自定义类型引用的代码不能很好地聚集一起。
+        这个新问题可以通过原型模式来解决。 -->
+    <title>原型模式</title>
+    <!-- 每个函数都会创建一个 prototype 属性，这个属性是一个对象，
+        包含应该由特定引用类型的实例 共享的属性和方法。
+        实际上，这个对象就是通过调用构造函数创建的对象的原型。
+        使用原型对象的好处是，在它上面定义的属性和方法可以被对象实例共享。
+        原来在构造函数中直接赋给对象实例的值，可以直接赋值给它们的原型 -->
+</head>
+<body>
+    <script>
+        function Person(){
+            Person.prototype.name = 'lzk'
+            Person.prototype.age = '29'
+            Person.prototype.sex = 'male'
+            Person.prototype.say = function (){
+                console.log(Person.prototype.name)
+            }
+        }
+        let p1 = new Person();
+        p1.say();
+        let p2 = new Person();
+        p2.say()
+        console.log(p1.say == p2.say)
+    </script>
+</body>
+</html>

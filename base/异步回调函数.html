@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function double(value, success, failure){
+            setTimeout(()=>{
+                try {
+                    if (typeof value !=="number") {
+                        throw "must be number"
+                    } 
+                    success(2 * value)
+                } catch (error) {
+                    failure(error)
+                }
+            }, 1000)
+        }
+
+        const successCallback = (x) => {
+            double(x, (y) => console.log(`Success: ${y}`)
+            );
+        };
+        const failureCallback = (e) => console.log(`Failure: ${e}`);
+        double(3, successCallback, failureCallback);
+        double('3', successCallback, failureCallback);
+    </script>
+</body>
+</html>

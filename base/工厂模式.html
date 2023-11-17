@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>工厂模式</title>
+    </head>
+    <body>
+        <script>
+    function createPerson(name, age, sex){
+        let people = new Object()
+        people.name = name
+        people.age = age
+        people.sex = sex
+        people.say = function(){
+            console.log(this.name)
+        }
+        return people
+    }
+    let people1 = createPerson('lzk', 32, '男')
+    people1.say()
+    let people2 = createPerson('lx', 32, '女')
+    people2.say()
+
+    // 构造函数模式
+    function createPerson2(name, age, sex){
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.say = function say(){
+            console.log(this.name);
+        }
+    }
+    let people3 = new createPerson2('lzk3', 32, '男')
+    people3.say()
+    let people4 = new createPerson2('lx4', 32, '女')
+    people4.say()
+</script>
+    </body>
+</html>

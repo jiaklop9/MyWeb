@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成器</title>
+</head>
+<body>
+    <script>
+        // 标识生成器函数的星号不受两侧空格的影响
+        function *generator(){};
+        const g = generator();
+        console.log(g);
+        console.log(g.next);
+        console.log("*" * 20)
+        // 产生可迭代对象
+        function *generator(){
+            yield * [1,2,3]
+        };
+        let tmp = generator();
+        console.log(tmp);
+        for (const x of tmp) {
+            console.log(x)
+        }
+
+    </script>
+</body>
+</html>

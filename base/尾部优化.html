@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>尾部优化</title>
+    </head>
+    <body>
+        <script>
+        function fib(n) {
+            if (n < 2) {
+                return n; 
+            }
+            return fib(n - 1) + fib(n - 2);
+        }
+        let start = Date.now()
+        fib(45)
+        let end = Date.now()
+        console.log(`cost: ${end -start}`)
+
+        function fibouter(n){
+            return fibinner(0, 1, n)
+        }
+
+        function fibinner(a, b, n){
+            if (n == 0){
+                return a;
+            } else {
+                return fibinner(b, a+b, n-1);
+            }
+        }
+        let start2 = Date.now()
+        fibouter(45)
+        end2 = Date.now()
+        console.log(`cost: ${end2 -start2}`)
+
+
+
+
+    </script>
+    </body>
+</html>

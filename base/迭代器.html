@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迭代器</title>
+</head>
+<body>
+    <script>
+        let arr = ['hello', 'world', 'helloword'];
+        for (let el of arr) {
+            console.log(el);
+        };
+        // 数组解构
+        let [a,b,c] = arr;
+        console.log(a, b, c);
+        // 扩展
+        let arr2 = [...arr, 'lzk'];
+        console.log(arr2);
+        // 迭代器协议
+        console.log(arr[Symbol.iterator]);
+        let arr3 = arr[Symbol.iterator]();
+        console.log(arr3.next());
+        console.log(arr3.next());
+        console.log(arr3.next());
+        console.log(arr3.next());
+        console.log(arr3.next());
+
+        // 实现可迭代接口
+        class Foo {
+            [Symbol.iterator]() {
+                return {'done': false, 'value': 'Foo'}
+            }
+        }
+        let f = new Foo();
+        console.log(f[Symbol.iterator]());
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>window对象</title>
+    </head>
+    <body>
+        <script>
+
+        console.log(`window.innerWidth: ${window.innerWidth}, window.innerHeight: ${window.innerHeight}`)
+        console.log(`window.outerWidth: ${window.outerWidth}, window.outerHeight: ${window.outerHeight}`)
+        setTimeout(()=>{}, 3000)
+        // 鼠标滑动
+        window.scrollTo({
+            left: 300,
+            right: 200,
+            behavior: "auto"
+        })
+
+        // 检测弹窗是否被屏蔽
+        // 在浏览器扩展或其他程序屏蔽弹窗时，window.open()通常会抛出错误。
+        // 因此要准确检测弹窗是否被屏蔽，除了检测 window.open()的返回值，还要把它用 try/catch 包装起来
+        let blocked = false
+        try {
+            let win = window.open('http://www.baidu.com', target='_blank', "fullScreen=true")
+            if (win == null){
+                blocked = true
+            }
+            
+        } catch (error) {
+            blocked = true
+        }
+        if (blocked){
+            alert("弹框被屏蔽了。。。")
+        }
+    
+    </script>
+    </body>
+</html>

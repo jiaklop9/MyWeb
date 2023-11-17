@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>查询字符串</title>
+    </head>
+    <body>
+        <script>
+
+            let getQueryStringArgs = function() {
+
+                // 取得没有开头问号的查询字符串
+                let qs = (location.search.length > 0 ? location.search.substring(1) : ""),
+                // 保存数据的对象 
+                args = {};
+                // 把每个参数添加到 args 对象
+                for (let item of qs.split("&").map(kv => kv.split("="))) {
+                        let name = decodeURIComponent(item[0]),
+                        value = decodeURIComponent(item[1]);
+                        if (name.length) {
+                        args[name] = value;
+                } }
+                return args;
+            }
+            console.log(getQueryStringArgs())
+    </script>
+    </body>
+</html>
