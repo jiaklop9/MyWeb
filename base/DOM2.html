@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="my-btn">click me</button>
+    <script>
+      let btn = document.getElementById("my-btn");
+      // DOM0 with event
+      btn.onclick = function(event){
+          // alert(this.id);
+          // alert(event.type);
+          // alert(event.bubbles);
+          // alert(event.currentTarget);
+          alert(event.target);
+      };
+
+      // DOM2
+      // btn.addEventListener(
+      //   "click",
+      //   () => {
+      //     console.log(this.id);
+      //   },
+      //   false
+      // );
+    </script>
+  </body>
+</html>

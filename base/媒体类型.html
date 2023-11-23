@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>媒体类型</title>
+    <style>
+        @media screen {
+            p.test{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 14px;
+            }
+        }
+        @media print{
+            p.test{
+                font-family: times, serif;
+                font-size: 10px;
+            }
+        }
+        @media screen, print{
+            p.test{
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="test">菜鸟教程，学的不只是技术</p>
+</body>
+</html>

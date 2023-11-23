@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下拉菜单</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .dropdown {
+            position: relative;
+            /* 
+            与 display: inline 相比，主要区别在于 display: inline-block 允许在元素上设置宽度和高度。
+            同样，如果设置了 display: inline-block，将保留上下外边距/内边距，而 display: inline 则不会。
+            与 display: block 相比，主要区别在于 display：inline-block 在元素之后不添加换行符，因此该元素可以位于其他元素旁边。 */
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            padding: 12px 16px;
+            /* https://juejin.cn/post/6854573222483099656 */
+            box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <span>移动，显示下拉菜单</span>
+        <div class="dropdown-content">
+            <p>菜鸟教程</p>
+            <p>www.itcase.com</p>
+        </div>
+    </div>
+</body>
+</html>
