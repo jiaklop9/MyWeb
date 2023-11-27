@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>碰撞检测</title>
+        <style>
+        /* body {
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        } */
+        div {
+            /* 使用top left 必须设定元素为absolute或者relative */
+            top: 0;
+            left: 0;
+            background-color: blue;
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            animation: 
+            hor 3s infinite linear alternate,
+            for 2s infinite linear alternate;;
+        }
+        @keyframes hor {
+            to {
+                left: calc(100vw - 150px);
+            }
+        }
+        @keyframes for {
+            to {
+                top: calc(100vh - 150px);
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

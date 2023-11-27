@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D转换</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border: 1px solid black;
+        }
+        div.diff {
+            /* translate 相对于原来位置，水平方向右移 50px， 垂直方向下移100px */
+            transform: translate(50px, 100px);
+            /* IE9 */
+            -ms-transform: translate(50px, 100px);
+            /* Safari and chrome */
+            -webkit-transform: translate(50px, 100px);
+        }
+    </style>
+</head>
+<body>
+    <div>2D转换实例</div>
+    <div class="diff">2D转换实例</div>
+</body>
+</html>
