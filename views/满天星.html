@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>满天星特效</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        /* 定义为border-box: 代表内边距和边框算到宽度里去 */
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #000;
+        min-height: 100vh;
+        /* overflow: hidden; */
+      }
+      .balls {
+        display: flex;
+        align-items: center;
+      }
+      .balls span {
+        height: 30px;
+        width: 30px;
+        /* hsla(hue, saturation, lightness)
+                色相（hue）是色轮上从 0 到 360 的度数。0 是红色，120 是绿色，240 是蓝色。
+                饱和度（saturation）是一个百分比值，0％ 表示灰色阴影，而 100％ 是全色。
+                亮度（lightness）也是百分比，0％ 是黑色，50％ 是既不明也不暗，100％是白色。
+            */
+        background-color: hsl(calc(var(--i) * 60), 100%, 70%);
+        border-radius: 50%;
+        /* 
+            flex-shrink定义：指定了 flex 元素的收缩规则，默认值是 1
+            如果子容器没有超出父容器，设置 flex-shrink 无效
+             */
+        flex-shrink: 0;
+        margin: 0 5px;
+        animation: animate 10s infinite linear;
+        /* 在编写 calc() 函数语法时，
+            必须在每个操作之间包含空格，特别是在使用 + 和 - 操作符时，否则表达式将无效 
+            */
+        animation-duration: calc(50s / var(--i));
+      }
+
+      @keyframes animate {
+        /* from 0% 意思一样，都是起点 */
+        from {
+          /* translateY, 值为正数向下移动 */
+          transform: translateY(100vh) scale(0);
+        }
+
+        to {
+          transform: translateY(-30px) scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div id="balls" class="balls"></div>
+    </div>
+    <script>
+      for (let i = 0; i < 100; i++) {
+        let el = document.createElement("span");
+        el.style = `--i:${Math.random() * 50 + 1}`;
+        // 这里balls竟然可以直接拿来用！！！！
+        balls.append(el);
+      }
+    </script>
+  </body>
+</html>
