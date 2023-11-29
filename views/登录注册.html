@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录注册</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      .container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ededed;
+      }
+      .container .box {
+        width: 900px;
+        height: 550px;
+        background: #fff;
+        border-radius: 4px;
+        position: relative;
+      }
+      .container .box .transitionBox {
+        position: absolute;
+        transition: 0.5s all ease-in-out;
+      }
+      /* 注意逗号，组合选择器 */
+      .container .box .transitionBox .login-box,
+      .reg-box {
+        width: 640px;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 50px 30px;
+      }
+      .container .box .transitionBox h1 {
+        margin-top: 35px;
+      }
+
+      .container .box .transitionBox section {
+        display: flex;
+        flex-flow: inherit;
+        align-items: inherit;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      .container .box .transitionBox section label {
+        font-size: 14px;
+        color: #909399;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+      .container .box .transitionBox section input {
+        width: 50%;
+        outline: 0;
+        border: none;
+        color: tomato;
+        font-size: 18px;
+        text-align: center;
+        padding: 4px 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+      }
+      .container .box .transitionBox section span {
+        color: rgb(80, 80, 77);
+        font-size: 15px;
+        cursor: pointer;
+        margin-top: 18px;
+      }
+      .container .box .transitionBox button {
+        width: 50%;
+        padding: 6px 0;
+        text-align: center;
+        border: 3px solid #d4af7a;
+        border-radius: 20px;
+        background: #d4af7a;
+        color: #fff;
+        font-size: 17px;
+        letter-spacing: 6px;
+        /* text-indent 属性能定义一个块元素首行文本内容之前的缩进量。 */
+        text-indent: 6px;
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+      .container .box .transitionBox .other {
+        border: 3px solid #d3dae9;
+        background: #fff;
+        color: rgb(124, 145, 184);
+        font-weight: 600;
+      }
+      .container .box .transfertoReg {
+        width: 260px;
+        height: 100%;
+        background: linear-gradient(
+          to bottom right,
+          #0e92eb 0%,
+          #5f90ec 50%,
+          #b08fe5 100%
+        );
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        position: absolute;
+        left: 640px;
+        top: 0;
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+        padding: 50px 0;
+        color: white;
+        transition: all 1s ease-in-out;
+      }
+
+      .container .box .transfertoReg .title {
+        margin-bottom: 10px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .container .box .transfertoReg button {
+        margin-top: 260px;
+        width: 50%;
+        padding: 8px 0;
+        border-radius: 14px;
+        letter-spacing: 10px;
+        text-indent: 10px;
+        font-size: 18px;
+        color: #fff;
+        background: transparent;
+        border: 3px solid #fff;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .container .box .transfertoReg button:hover {
+        border: 3px solid #603dfc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="transitionBox">
+          <div class="login-box">
+            <h1>欢迎回来</h1>
+            <section>
+              <label for="email">邮箱</label>
+              <input type="text" id="email" />
+            </section>
+            <section>
+              <label for="password">密码</label>
+              <input type="password" id="password" />
+              <span>忘记密码？</span>
+            </section>
+            <button type="button">登录</button>
+            <button type="button" class="other">
+              使用<span style="font-weight: 900; color: #45aa81">二维码</span
+              >扫码登录
+            </button>
+          </div>
+          <div class="reg-box" style="display: none">
+            <h1>立即注册</h1>
+            <section>
+              <label for="username">用户名</label>
+              <input type="text" id="username" />
+            </section>
+            <section>
+              <label for="email">邮箱</label>
+              <input type="text" id="email" />
+            </section>
+            <section>
+              <label for="password">密码</label>
+              <input type="password" id="password" />
+            </section>
+            <button type="button">注册</button>
+            <button type="button" class="other">
+              使用<span style="font-weight: 900; color: #45aa81">二维码</span
+              >扫码注册
+            </button>
+          </div>
+        </div>
+        <div class="transfertoReg">
+          <h1 class="title">还未注册?</h1>
+          <span class="subTitle">立即注册，发现大量机会</span>
+          <button type="button" id="transferBtn">注册</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      let transfer = document.getElementById("transferBtn");
+      transfer.addEventListener("click", function () {
+        let login = document.querySelector(".login-box");
+        let register = document.querySelector(".reg-box");
+        let parent = document.querySelector(".transitionBox");
+        let target = document.querySelector(".transfertoReg");
+        let title = document.querySelector(".title");
+        let subtitle = document.querySelector(".subTitle");
+        if (transfer.innerText == "注册") {
+          target.style.left = 0;
+          parent.style.left = 260 + "px";
+          transfer.innerText = "登录";
+          title.innerText = "已有账号";
+          subtitle.innerText = "好久不见，已有账号就登录吧";
+          setTimeout(() => {
+            login.style.display = "none";
+            register.style.display = "flex";
+          }, 300);
+        } else {
+          target.style.left = 640 + "px";
+          parent.style.left = 0;
+          transfer.innerText = "注册";
+          title.innerText = "还未注册";
+          subtitle.innerText = "立即注册，发现大量机会";
+          setTimeout(() => {
+            login.style.display = "flex";
+            register.style.display = "none";
+          }, 300);
+        }
+      });
+    </script>
+  </body>
+</html>
