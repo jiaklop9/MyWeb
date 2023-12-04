@@ -40,3 +40,4 @@
 - [满天星特效](https://github.com/jiaklop9/MyWeb/blob/master/views/满天星.html)
 - [登录注册](https://github.com/jiaklop9/MyWeb/blob/master/views/登录注册.html)
 - [烟花](https://github.com/jiaklop9/MyWeb/blob/master/views/烟花.html)
+- [图片轮播](https://github.com/jiaklop9/MyWeb/blob/master/views/图片轮播.html)
