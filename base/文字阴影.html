@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字阴影</title>
+    <style>
+        div {
+            font-size: 40px;
+            /* 
+            x偏移方向，右为正
+            y轴偏移方向，下为正
+            blur：模糊距离，值越大越模糊
+            color: 阴影颜色
+            同margin一样，可以设置多个偏移量，不过顺序不一致，这边是左上右下
+            */
+            /* text-shadow: 4px 4px 20px gray; */
+            text-shadow: 4px 4px 2px gray, 6px 6px 2px gray, 8px 8px 8px gray;
+        }
+    </style>
+</head>
+<body>
+    <div>文字阴影测试</div>
+</body>
+</html>
