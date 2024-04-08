@@ -42,3 +42,4 @@
 - [烟花](https://github.com/jiaklop9/MyWeb/blob/master/views/烟花.html)
 - [图片轮播](https://github.com/jiaklop9/MyWeb/blob/master/views/图片轮播.html)
 - [火焰字](https://github.com/jiaklop9/MyWeb/blob/master/views/火焰字.html)
+- [瀑布流效果](https://github.com/jiaklop9/MyWeb/blob/master/views/瀑布流效果.html)

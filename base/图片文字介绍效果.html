@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片文字介绍滑动效果</title>
+    <style>
+        #info {
+            width: 760px;
+            margin: 0 auto;
+        }
+        .wrap {
+            width: 220px;
+            height: 330px;
+            float: left;
+            position: relative;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .wrap img {
+            border: 0;
+            width: 220px;
+            height: 330px;
+        }
+        .wrap p {
+            display: block;
+            width: 220px;
+            height: 330px;
+            position: absolute;
+            left: 0;
+            top: 330px;
+            background-color: rgba(0, 0, 0, 0.3);
+            font-size: 12px;
+            color: #ffffff;
+            padding: 0;
+            margin: 0;
+            line-height: 16px;
+            transition: all 0.6s ease-in-out;
+
+        }
+        .wrap p b {
+            display: block;
+            font-size: 22px;
+            color: #fc0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            line-height: 30px;
+        }
+        .wrap:hover p {
+            top: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="info">
+        <div class="wrap">
+            <img src="http://api.lvyestudy.com/upload/articles/d5ff5e1e3ed3gcdb8a815ddb.png" alt="">
+            <p>
+                <b>Emperor Penguin</b>
+                <span>The Emperor Penguin (Aptenodytes forsteri) is the tallest and heaviest of all living penguin species and is endemic to Antarctica.<br><br>The male and female are similar in plumage and size, reaching 122 cm (48 in) in height and weighing anywhere from 22.37 kg (48.82 lb). The dorsal parts are black and sharply delineated from the white belly, pale-yellow breast and bright-yellow ear patches.</span>
+            </p>
+        </div>
+        <div class="wrap">
+            <img src="http://api.lvyestudy.com/upload/articles/d5ff5e1e3ed3gcdb8a815ddb.png" alt="">
+            <p>
+                <b>Emperor Penguin</b>
+                <span>The Emperor Penguin (Aptenodytes forsteri) is the tallest and heaviest of all living penguin species and is endemic to Antarctica.<br><br>The male and female are similar in plumage and size, reaching 122 cm (48 in) in height and weighing anywhere from 22.37 kg (48.82 lb). The dorsal parts are black and sharply delineated from the white belly, pale-yellow breast and bright-yellow ear patches.</span>
+            </p>
+        </div>
+        <div class="wrap">
+            <img src="http://api.lvyestudy.com/upload/articles/d5ff5e1e3ed3gcdb8a815ddb.png" alt="">
+            <p>
+                <b>Emperor Penguin</b>
+                <span>The Emperor Penguin (Aptenodytes forsteri) is the tallest and heaviest of all living penguin species and is endemic to Antarctica.<br><br>The male and female are similar in plumage and size, reaching 122 cm (48 in) in height and weighing anywhere from 22.37 kg (48.82 lb). The dorsal parts are black and sharply delineated from the white belly, pale-yellow breast and bright-yellow ear patches.</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

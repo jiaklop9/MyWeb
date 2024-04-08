@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading效果</title>
+    <style>
+        #box {
+            position: relative;
+        }
+
+        #box>i {
+            position: absolute;
+            top: 0;
+            width: 5px;
+            height: 40px;
+            background-color: hotpink;
+            border-radius: 6px;
+        }
+
+        #box>i:nth-child(1) {
+            left: 0;
+            animation: loading 1s ease-in 0.1s infinite;
+        }
+
+        #box>i:nth-child(2) {
+            left: 10px;
+            animation: loading 1s ease-in 0.3s infinite;
+        }
+
+        #box>i:nth-child(3) {
+            left: 20px;
+            animation: loading 1s ease-in 0.6s infinite;
+        }
+
+        #box>i:nth-child(4) {
+            left: 30px;
+            animation: loading 1s ease-in 0.3s infinite;
+        }
+
+        @keyframes loading {
+            0% {
+                transform: scaleY(1);
+            }
+
+            50% {
+                transform: scaleY(0.5);
+            }
+
+            100% {
+                transform: scaleY(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+</body>
+
+</html>
