@@ -9,6 +9,10 @@
 <hr>
 
 - [悬停效果](https://github.com/jiaklop9/MyWeb/blob/master/views/%E6%82%AC%E5%81%9C%E6%95%88%E6%9E%9C.html)
+![](images/悬停效果.png)
+<hr>
+
+
 - [炫彩爱心特效](https://github.com/jiaklop9/MyWeb/blob/master/views/%E7%82%AB%E5%BD%A9%E7%88%B1%E5%BF%83%E7%89%B9%E6%95%88.html)
 - [登录框](https://github.com/jiaklop9/MyWeb/blob/master/views/%E7%99%BB%E5%BD%95%E6%A1%86.html)
 - [社交分享按钮](https://github.com/jiaklop9/MyWeb/blob/master/views/%E7%A4%BE%E4%BA%A4%E5%88%86%E4%BA%AB%E6%8C%89%E9%92%AE.html)
@@ -41,7 +45,6 @@
 - [太阳系](https://github.com/jiaklop9/MyWeb/blob/master/views/太阳系.html)
 - [不偷看密码的超萌猫头鹰](https://github.com/jiaklop9/MyWeb/blob/master/views/不偷看密码的超萌猫头鹰.html)
 - [css生成三角形](https://github.com/jiaklop9/MyWeb/blob/master/views/css生成三角形.html)
-- [flex比例布局](https://github.com/jiaklop9/MyWeb/blob/master/views/flex比例布局.html)
 - [射线渐变](https://github.com/jiaklop9/MyWeb/blob/master/views/射线渐变.html)
 - [满天星特效](https://github.com/jiaklop9/MyWeb/blob/master/views/满天星.html)
 - [登录注册](https://github.com/jiaklop9/MyWeb/blob/master/views/登录注册.html)
