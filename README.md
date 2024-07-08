@@ -68,7 +68,7 @@
 <hr>
 
 
-- [酷炫加载特效](https://github.com/jiaklop9/MyWeb/blob/master/views/酷炫.html)
+- [酷炫加载特效](https://github.com/jiaklop9/MyWeb/blob/master/loading/酷炫.html)
 
 ![酷炫加载特效](images/酷炫加载特效.png)
 <hr>
