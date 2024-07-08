@@ -1,14 +1,18 @@
 ### 项目经验
 - [侧边导航栏](https://github.com/jiaklop9/MyWeb/blob/master/views/%E4%BE%A7%E8%BE%B9%E5%AF%BC%E8%88%AA%E6%A0%8F.html)
+
 ![](images/侧边导航栏.jpg)
 <hr>
 
 - [加载效果](https://github.com/jiaklop9/MyWeb/blob/master/views/%E5%8A%A0%E8%BD%BD%E6%95%88%E6%9E%9C.html)
+
 - [导航栏悬停效果](https://github.com/jiaklop9/MyWeb/blob/master/views/%E5%AF%BC%E8%88%AA%E6%A0%8F%E6%82%AC%E5%81%9C%E6%95%88%E6%9E%9C.html)
+
 ![](images/导航栏悬停效果.jpg)
 <hr>
 
 - [悬停效果](https://github.com/jiaklop9/MyWeb/blob/master/views/%E6%82%AC%E5%81%9C%E6%95%88%E6%9E%9C.html)
+
 ![](images/悬停效果.png)
 <hr>
 
@@ -51,10 +55,20 @@
 - [烟花](https://github.com/jiaklop9/MyWeb/blob/master/views/烟花.html)
 - [图片轮播](https://github.com/jiaklop9/MyWeb/blob/master/views/图片轮播.html)
 - [火焰字](https://github.com/jiaklop9/MyWeb/blob/master/views/火焰字.html)
+
 - [瀑布流效果](https://github.com/jiaklop9/MyWeb/blob/master/views/瀑布流效果.html)
+
 ![瀑布流效果](images/瀑布流效果.jpg)
 <hr>
 
-- [毛玻璃背景]()
+
+- [毛玻璃背景](https://github.com/jiaklop9/MyWeb/blob/master/views/毛玻璃背景.html)
+
 ![毛玻璃背景](images/毛玻璃背景.jpg)
+<hr>
+
+
+- [酷炫加载特效](https://github.com/jiaklop9/MyWeb/blob/master/views/酷炫.html)
+
+![酷炫加载特效](images/酷炫加载特效.png)
 <hr>

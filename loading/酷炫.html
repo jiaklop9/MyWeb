@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酷炫加载特效</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000;
+        }
+
+        .loading {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            /* 色标：从下到上，从蓝色开始渐变，到高度 40% 位置是绿色渐变开始，最后以红色结束 */
+            /* linear-gradient(0deg, blue, green 40%, red); */
+            /* 如果没有指定，则默认为 to bottom。 to top、to bottom、to left 和 to right 分别等价于 0deg、180deg、270deg 和 90deg。其余值会被转换为角度 */
+            /* transparent */
+            /* 如果一个元素覆盖在另外一个元素之上，而你想显示下面的元素，这时你就需要把上面这个元素的background设置为transparent */
+            background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+            animation: animate 2s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotate(0deg);
+                filter: hue-rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        .loading::before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            bottom: 6px;
+            left: 6px;
+            background: #000;
+            border-radius: 50%;
+            /* CSS z-index 属性设置定位元素及其后代元素或 flex 项目的 Z 轴顺序。z-index 较大的重叠元素会覆盖较小的元素。 */
+            z-index: 1000;
+        }
+
+
+
+        .loading::after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background: #000;
+            border-radius: 50%;
+            z-index: 1;
+            background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+            filter: blur(30px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading"></div>
+</body>
+
+</html>
