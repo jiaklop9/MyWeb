@@ -2,18 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>好看的水球加载效果</title>
+    <title>水球加载效果</title>
     <style>
-
         * {
             margin: 0;
             padding: 0;
         }
         body {
             height: 100vh;
-            background: linear-gradient(to bottom, #89f7fe, #66a6ff);
+            background: linear-gradient(180deg, #89f7fe, #66a6ff);
         }
         .wave {
             width: 200px;
@@ -21,12 +19,11 @@
             background-color: #2979e7;
             border-radius: 50%;
             position: absolute;
-            /* 以下三行实现元素剧中效果 */
+            /* 实现居中效果 */
             left: 50%;
             top: 50%;
-            /* 以屏幕左上角为原点， x轴水平向右，y轴垂直向下 */
             transform: translate(-50%, -50%);
-            box-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 50px rgba(255, 255, 255, 0.2, green, blue, alpha);
             overflow: hidden;
         }
         .wave::before {
@@ -40,9 +37,11 @@
             transform: translate(-50%, -65%);
             border-radius: 40%;
             animation: wave 5s linear infinite;
+
         }
+
         .wave::after {
-            content: '加载中...';
+            content: "加载中...";
             position: absolute;
             left: 50%;
             top: 0;
@@ -54,7 +53,9 @@
             100% {
                 transform: translate(-50%, -65%) rotate(360deg);
             }
+            
         }
+
     </style>
 </head>
 <body>

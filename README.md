@@ -25,7 +25,6 @@
 - [菜单悬停效果](https://github.com/jiaklop9/MyWeb/blob/master/views/%E8%8F%9C%E5%8D%95%E6%82%AC%E5%81%9C%E6%95%88%E6%9E%9C.html)
 - [菱形加载动画](https://github.com/jiaklop9/MyWeb/blob/master/views/%E8%8F%B1%E5%BD%A2%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB.html)
 - [3D旋转卡片](https://github.com/jiaklop9/MyWeb/blob/master/views/3D%E6%97%8B%E8%BD%AC%E5%8D%A1%E7%89%87.html)
-- [好看的水球加载效果](https://github.com/jiaklop9/MyWeb/blob/master/views/%E6%B0%B4%E7%90%83%E5%8A%A0%E8%BD%BD%E6%95%88%E6%9E%9C.html)
 - [侧边展开导航栏](https://github.com/jiaklop9/MyWeb/blob/master/views/侧边展开导航栏.html)
 - [3D旋转木马相册](https://github.com/jiaklop9/MyWeb/blob/master/views/3D旋转木马相册.html)
 - [云朵特效](https://github.com/jiaklop9/MyWeb/blob/master/views/云朵特效.html)
@@ -68,6 +67,7 @@
 <hr>
 
 
+<<<<<<< HEAD
 - [背景渐变](https://github.com/jiaklop9/MyWeb/blob/master/views/背景渐变.html)
 
 ![背景渐变](images/背景渐变.jpg)
@@ -82,6 +82,8 @@
 
 
 
+=======
+>>>>>>> cc803d4e5aa84440cc43bfed07a4072813283c6b
 <hr>
 
 ### 登录相关
@@ -101,3 +103,14 @@
 <hr>
 
 - [flex比例布局](https://github.com/jiaklop9/MyWeb/blob/master/布局/flex比例布局.html)
+
+
+### 加载相关
+
+- [好看的水球加载效果](https://github.com/jiaklop9/MyWeb/blob/master/loading/水球加载效果.html)
+
+![](images/水球加载效果.png)
+
+- [酷炫加载特效](https://github.com/jiaklop9/MyWeb/blob/master/loading/酷炫.html)
+
+![酷炫加载特效](images/酷炫加载特效.png)
