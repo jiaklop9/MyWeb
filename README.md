@@ -67,10 +67,9 @@
 <hr>
 
 
-<<<<<<< HEAD
 - [背景渐变](https://github.com/jiaklop9/MyWeb/blob/master/views/背景渐变.html)
 
-![背景渐变](images/背景渐变.jpg)
+![背景渐变](images/背景渐变.png)
 <hr>
 
 
@@ -81,9 +80,6 @@
 <hr>
 
 
-
-=======
->>>>>>> cc803d4e5aa84440cc43bfed07a4072813283c6b
 <hr>
 
 ### 登录相关
