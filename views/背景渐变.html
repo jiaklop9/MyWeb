@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=], initial-scale=1.0">
-    <title>背景不停渐变效果</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景不停渐变</title>
     <style>
         body {
             margin: 0;
@@ -14,38 +12,38 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            /* 0deg：从下到上， 180deg: 从上到下，90deg：从左到右 */
             background: linear-gradient(125deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);
             background-size: 500%;
-            animation: bgAnimation 15s linear infinite;
+            animation: bgAnimation 10s linear infinite;
         }
 
         .text {
             color: #fff;
             font-size: 30px;
-            /* 字间距 */
+            /* 标准字体为16px */
             letter-spacing: 15px;
         }
 
+
         @keyframes bgAnimation {
+            /* https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-position 查看动画效果 */
             0% {
-                /* background-position CSS 属性为每一个背景图片设置初始位置。
-                这个位置是相对于由 background-origin 定义的位置图层的。 */
+                /* 左边 0, 上边50% */
                 background-position: 0% 50%;
             }
-
             50% {
                 background-position: 100% 50%;
             }
-
             100% {
                 background-position: 0% 50%;
-            }
+            }    
         }
+
     </style>
+
 </head>
-
 <body>
-    <div class="text">背景不停渐变效果</div>
+    <div class="text">背景不停渐变</div>
 </body>
-
 </html>

@@ -68,6 +68,13 @@
 <hr>
 
 
+- [背景渐变](https://github.com/jiaklop9/MyWeb/blob/master/views/背景渐变.html)
+
+![背景渐变](images/背景渐变.jpg)
+<hr>
+
+
+
 - [酷炫加载特效](https://github.com/jiaklop9/MyWeb/blob/master/loading/酷炫.html)
 
 ![酷炫加载特效](images/酷炫加载特效.png)
