@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            width: 500px;
+        }
+        h1::before {
+            content: '';
+            height: 4px;
+            background-color: red;
+            display: inline-block;
+            position: absolute;
+            width: 0;
+            bottom: -6px;
+            transition: width 0.36s;
+
+        }
+        h1:hover::before{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>鼠标悬浮，文字下边出现下划线</h1>
+    </div>
+    <!-- 1. 使用伪元素创建下划线
+    2. 通过定位让下划线在文字底部
+    3. 初始宽度为0
+    4. hover宽度 100% 
+    -->
+</body>
+</html>
